@@ -21,4 +21,7 @@ export class ProductService {
   async delete(id: number): Promise<DeleteResult> {
     return this.productRepository.delete(id);
   }
+  async findOne(id){
+    return this.productRepository.findOne(id)
+  }
 }
